@@ -259,4 +259,32 @@ body{
             }
         }
     }
+    footer{
+        padding: 60px;
+        div{
+            text-align: center;
+            p{
+                font-size: 13px;
+                color: #9c9c9c;
+                span{
+                    color: #000000;
+                }
+            }
+            .icons{
+                margin-top: 60px;
+                margin-bottom: 60px;
+                border-top: solid 1px #e1e1e1;
+                border-bottom: solid 1px #e1e1e1;
+                padding: 15px;
+                a{
+                    color: #959595;
+                    margin: 0 40px;
+                    line-height: 40px;
+                    @include max-screen(820px){
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
 }
