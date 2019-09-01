@@ -26,7 +26,7 @@ body {
           padding: 42px 26px;
           transition: 0.2s;
           color: #777777; }
-          @media screen and (max-width: 830px) {
+          @media screen and (max-width: 990px) {
             body header .navbar .container .navbar-collapse .navbar-nav li a {
               padding: 42px 13px; } }
           @media screen and (max-width: 768px) {
@@ -122,5 +122,68 @@ body {
           body .carousel .carousel-control span i {
             padding: 6px 8px 6px 8px;
             font-size: 10px; } }
+  body section {
+    background-color: #fafafa; }
+    body section .container {
+      padding: 35px 0; }
+      body section .container div.menu {
+        border-top: solid 1px #e1e1e1;
+        border-bottom: solid 1px #e1e1e1;
+        width: 90%;
+        margin: 0 auto 40px; }
+        body section .container div.menu .nav {
+          padding: 5px 0; }
+          body section .container div.menu .nav li {
+            margin: 0; }
+            body section .container div.menu .nav li a {
+              color: #777777;
+              font-weight: 700;
+              background-color: transparent;
+              text-transform: uppercase; }
+            body section .container div.menu .nav li :hover {
+              background-color: transparent;
+              color: black; }
+          body section .container div.menu .nav li.active {
+            color: #000;
+            background-color: transparent; }
+            body section .container div.menu .nav li.active a {
+              background-color: transparent;
+              color: black; }
+          body section .container div.menu .nav li.line {
+            font-size: 28px;
+            font-weight: 300;
+            color: #e1e1e1; }
+      body section .container div.margin {
+        padding-top: 40px; }
+        body section .container div.margin div img {
+          margin-bottom: 40px; }
+        body section .container div.margin .top-1 {
+          margin-top: -70px; }
+          @media screen and (max-width: 768px) {
+            body section .container div.margin .top-1 {
+              margin-top: 0; } }
+        body section .container div.margin .top-2 {
+          margin-top: -70px; }
+          @media screen and (max-width: 768px) {
+            body section .container div.margin .top-2 {
+              margin-top: 0; } }
+        body section .container div.margin .top-3 {
+          margin-top: -150px; }
+          @media screen and (max-width: 768px) {
+            body section .container div.margin .top-3 {
+              margin-top: 0; } }
+    body section .button {
+      padding: 50px 0;
+      text-align: center; }
+      body section .button a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        background-color: #959595;
+        padding: 8px 30px;
+        border-radius: 5px;
+        transition: 0.3s; }
+      body section .button a:hover {
+        background-color: black; }
 
 /*# sourceMappingURL=style.css.map */
