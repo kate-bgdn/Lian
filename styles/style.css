@@ -1,3 +1,49 @@
-
+body {
+  font-family: 'Roboto', sans-serif; }
+  body header {
+    padding: 0;
+    -webkit-box-shadow: 3px 0 5px 3px #9d9d9d;
+    box-shadow: 3px 0 5px 3px #9d9d9d;
+    position: relative;
+    z-index: 1; }
+    body header .navbar {
+      background-image: linear-gradient(to bottom, #fff 0, #fff 0%);
+      box-shadow: none;
+      border: none; }
+      body header .navbar .container .navbar-header a.navbar-brand {
+        padding: 40px 0; }
+        @media screen and (max-width: 830px) {
+          body header .navbar .container .navbar-header a.navbar-brand {
+            padding: 40px 15px; } }
+      body header .navbar .container .navbar-header button {
+        padding: 40px 15px;
+        border: none; }
+        body header .navbar .container .navbar-header button .icon-bar {
+          width: 30px; }
+      body header .navbar .container .navbar-collapse .navbar-nav li {
+        font-size: 15px; }
+        body header .navbar .container .navbar-collapse .navbar-nav li a {
+          padding: 42px 26px;
+          transition: 0.2s;
+          color: #777777; }
+          @media screen and (max-width: 830px) {
+            body header .navbar .container .navbar-collapse .navbar-nav li a {
+              padding: 42px 13px; } }
+          @media screen and (max-width: 768px) {
+            body header .navbar .container .navbar-collapse .navbar-nav li a {
+              padding: 20px 13px; } }
+          body header .navbar .container .navbar-collapse .navbar-nav li a span {
+            width: 20px;
+            height: 1px;
+            background-color: transparent;
+            display: inline-block;
+            transition: 0.2s;
+            position: relative;
+            right: 18px;
+            top: -5px; }
+        body header .navbar .container .navbar-collapse .navbar-nav li a:hover {
+          color: #000000; }
+          body header .navbar .container .navbar-collapse .navbar-nav li a:hover span {
+            background-color: black; }
 
 /*# sourceMappingURL=style.css.map */

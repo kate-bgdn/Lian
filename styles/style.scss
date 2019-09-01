@@ -1,0 +1,79 @@
+
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    header {
+        padding: 0;
+        -webkit-box-shadow: 3px 0 5px 3px #9d9d9d;
+        box-shadow: 3px 0 5px 3px #9d9d9d;
+        position: relative;
+        z-index: 1;
+
+        .navbar {
+            background-image: linear-gradient(to bottom, #fff 0, #fff 0%);
+            box-shadow: none;
+            border: none;
+
+            .container {
+                .navbar-header {
+                    a.navbar-brand {
+                        padding: 40px 0;
+                        @include max-screen(830px){
+                            padding: 40px 15px;
+                        }
+                    }
+                    button {
+                        padding: 40px 15px;
+                        border: none;
+                        .icon-bar {
+                            width: 30px;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    .navbar-nav {
+                        li {
+                            font-size: 15px;
+                            a{
+                                padding: 42px 26px;
+                                transition: 0.2s;
+                                color: #777777;
+                                @include max-screen(830px){
+                                    padding: 42px 13px;
+                                }
+                                @include max-screen(768px){
+                                    padding: 20px 13px;
+                                }
+                                span{
+                                    width: 20px;
+                                    height: 1px;
+                                    background-color: transparent;
+                                    display: inline-block;
+                                    transition: 0.2s;
+                                    position: relative;
+                                    right: 18px;
+                                    top: -5px;
+                                }
+
+                            }
+                            a:hover {
+                                color: #000000;
+                                span{
+                                    background-color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
