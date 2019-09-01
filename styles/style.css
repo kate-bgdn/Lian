@@ -45,5 +45,82 @@ body {
           color: #000000; }
           body header .navbar .container .navbar-collapse .navbar-nav li a:hover span {
             background-color: black; }
+  body .carousel {
+    margin-top: -20px;
+    position: relative;
+    z-index: 0; }
+    body .carousel .carousel-indicators li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 1px;
+      cursor: pointer;
+      background-color: #ffffff;
+      border: 1px solid #fff;
+      border-radius: 10px; }
+    body .carousel .carousel-indicators .active {
+      background-color: #ffffff;
+      border: 3px solid #000000; }
+    body .carousel .carousel-inner .item .carousel-caption {
+      top: 210px; }
+      @media screen and (max-width: 1200px) {
+        body .carousel .carousel-inner .item .carousel-caption {
+          top: 100px; } }
+      @media screen and (max-width: 768px) {
+        body .carousel .carousel-inner .item .carousel-caption {
+          top: 50px; } }
+      @media screen and (max-width: 600px) {
+        body .carousel .carousel-inner .item .carousel-caption {
+          top: 0; } }
+      @media screen and (max-width: 425px) {
+        body .carousel .carousel-inner .item .carousel-caption {
+          top: -15px; } }
+      body .carousel .carousel-inner .item .carousel-caption h2 {
+        display: inline-block;
+        margin-bottom: 25px;
+        padding: 5px 50px;
+        font-size: 48px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-shadow: none;
+        background-color: black;
+        letter-spacing: 4px; }
+        @media screen and (max-width: 1024px) {
+          body .carousel .carousel-inner .item .carousel-caption h2 {
+            font-size: 34px; } }
+        @media screen and (max-width: 600px) {
+          body .carousel .carousel-inner .item .carousel-caption h2 {
+            font-size: 24px;
+            padding: 5px 20px;
+            margin-bottom: 10px; } }
+        @media screen and (max-width: 425px) {
+          body .carousel .carousel-inner .item .carousel-caption h2 {
+            font-size: 14px; } }
+      body .carousel .carousel-inner .item .carousel-caption span {
+        display: block;
+        text-transform: uppercase;
+        text-shadow: none;
+        color: black;
+        letter-spacing: 5px;
+        font-weight: 300;
+        font-size: 18px; }
+        @media screen and (max-width: 600px) {
+          body .carousel .carousel-inner .item .carousel-caption span {
+            font-size: 10px; } }
+    body .carousel .carousel-control {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0) 0%); }
+      body .carousel .carousel-control span i {
+        border: white solid 1px;
+        opacity: 1;
+        padding: 12px 18px 12px 16px;
+        border-radius: 30px;
+        margin-top: 18vw;
+        font-size: 26px;
+        color: #ffffff;
+        text-shadow: none; }
+        @media screen and (max-width: 600px) {
+          body .carousel .carousel-control span i {
+            padding: 6px 8px 6px 8px;
+            font-size: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

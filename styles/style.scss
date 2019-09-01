@@ -75,5 +75,103 @@ body{
             }
         }
     }
+    .carousel{
+        margin-top: -20px;
+        position: relative;
+        z-index: 0;
+        .carousel-indicators{
+            li {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                margin: 1px;
 
+                cursor: pointer;
+                background-color: #ffffff;
+                border: 1px solid #fff;
+                border-radius: 10px;
+            }
+            .active {
+                background-color: #ffffff;
+                border: 3px solid #000000;
+            }
+        }
+        .carousel-inner{
+            .item{
+                .carousel-caption{
+                    top: 210px;
+                    @include max-screen(1200px){
+                        top: 100px;
+                    }
+                    @include max-screen(768px){
+                        top: 50px;
+                    }
+                    @include max-screen(600px){
+                        top: 0;
+                    }
+                    @include max-screen(425px){
+                        top: -15px;
+                    }
+                    h2{
+                        display: inline-block;
+                        margin-bottom: 25px;
+                        padding: 5px 50px;
+                        font:{
+                            size: 48px;
+                            weight: 300;
+                        }
+                        text-transform: uppercase;
+                        text-shadow: none;
+                        background-color: black;
+                        letter-spacing: 4px;
+                        @include max-screen(1024px){
+                            font-size: 34px;
+                        }
+                        @include max-screen(600px){
+                            font-size: 24px;
+                            padding: 5px 20px;
+                            margin-bottom: 10px;
+                        }
+                        @include max-screen(425px){
+                            font-size: 14px;
+                        }
+                    }
+                    span{
+                        display: block;
+                        text-transform: uppercase;
+                        text-shadow: none;
+                        color: black;
+                        letter-spacing: 5px;
+                        font:{
+                            weight: 300;
+                            size: 18px;
+                        }
+                        @include max-screen(600px){
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-control{
+            background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,0) 0%);
+            span{
+                i {
+                    border: white solid 1px;
+                    opacity: 1;
+
+                    padding: 12px 18px 12px 16px;
+                    border-radius: 30px;
+                    margin-top: 18vw;
+                    font-size: 26px;
+                    color: #ffffff;
+                    text-shadow: none;
+                    @include max-screen(600px){
+                        padding: 6px 8px 6px 8px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
